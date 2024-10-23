@@ -106,7 +106,8 @@ def upload_file(request):
     print("Saving map to HTML...")
     kdv_map_html = map_NewYork._repr_html_()  # 直接获取 HTML 内容
 
-    return HttpResponse(kdv_map_html)  # 返回 HTML 内容
+    return HttpResponse(kdv_map_html)
+    # 返回 HTML 内
 
 # @api_view(['POST'])
 # def upload_file(request):
